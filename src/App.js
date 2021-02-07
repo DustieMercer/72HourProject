@@ -18,7 +18,7 @@ function showPosition(position){
 
   return (
 <div>
-
+    <p>heeeeeey testy</p>
 </div>
 
   );
