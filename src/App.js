@@ -32,8 +32,7 @@ function App() {
         <CardDeck>
           <WeatherChild latitude={latitude} longitude={longitude}/>
           <Satellite latitude={latitude} longitude={longitude}/>
-       <Restaurants latitude={latitude} longitude={longitude} /
-      
+          <Restaurants latitude={latitude} longitude={longitude} />
         </CardDeck>  
       </div>
   );
