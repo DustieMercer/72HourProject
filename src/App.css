@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+
+.jumbotron {
+  background-image: url(/src/components/assets/officeSpace.jpg);
+  background-position:right;
+  background-repeat: no-repeat;
+  height: 325px;
+}
+
+.Card {
+  padding: 1em;
+}

@@ -1,7 +1,9 @@
-/*import React, { useEffect, useState } from 'react';*/
-
-import React, { useEffect, useState } from 'react';
 import Satellite from "./components/Satellite";
+import React, { useEffect, useState } from "react";
+import './App.css';
+import WeatherChild from "./components/weather/Weather";
+import {CardDeck, Container, Jumbotron} from 'reactstrap';
+import officeSpace from './components/assets/officeSpace.jpg';
 import Restaurants from './components/Restaurants'
 
 function App() {
@@ -19,15 +21,22 @@ function App() {
 
     return (
       <div>
-        <Satellite latitude={latitude} longitude={longitude}/>
-        <Restaurants latitude={latitude} longitude={longitude} />
+        <div className='container'>
+      <Jumbotron fluid>
+        <Container background-img={officeSpace} fluid>
+          <h1 className="display-3">Office Space</h1>
+          <h2 className="lead">72 Hour Project</h2>
+        </Container>
+      </Jumbotron>
+      </div>
+        <CardDeck>
+          <WeatherChild latitude={latitude} longitude={longitude}/>
+          <Satellite latitude={latitude} longitude={longitude}/>
+       <Restaurants latitude={latitude} longitude={longitude} /
+      
+        </CardDeck>  
       </div>
   );
 }
 
 export default App;
-
-
-
-
-
