@@ -4,6 +4,7 @@ import './App.css';
 import WeatherChild from "./components/weather/Weather";
 import {CardDeck, Container, Jumbotron} from 'reactstrap';
 import officeSpace from './components/assets/officeSpace.jpg';
+import Restaurants from './components/Restaurants'
 
 function App() {
     const[longitude, setLongitude] = useState()
@@ -31,6 +32,7 @@ function App() {
         <CardDeck>
           <WeatherChild latitude={latitude} longitude={longitude}/>
           <Satellite latitude={latitude} longitude={longitude}/>
+       <Restaurants latitude={latitude} longitude={longitude} /
       
         </CardDeck>  
       </div>
@@ -38,11 +40,3 @@ function App() {
 }
 
 export default App;
-
-// const Satellite2 = (props) => {
-
-//   return (
-//       <div>{props.latitude}</div>
-//   );
-// }
-
