@@ -1,27 +1,30 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
+import './App.css';
+import WeatherChild from "./components/weather/Weather";
+import {CardDeck, Container, Jumbotron} from 'reactstrap';
+import officeSpace from './components/assets/officeSpace.jpg';
+
+
 
 function App() {
-  // const[longitude, setLongitude] = useState(longitude)
-  // const[latitude, setLatitude] = useState(latitude)
-
-
-
-useEffect(() => {
-  navigator.geolocation.getCurrentPosition(showPosition);
-},[]);
-
-
-function showPosition(position){
-  console.log(`latitude: ${position.coords.latitude} and longitude ${position.coords.longitude}`)
-}
-
 
   return (
-<div>
+  <div>
+    <div className='container'>
+      <Jumbotron fluid>
+        <Container background-img={officeSpace} fluid>
+          <h1 className="display-3">Office Space</h1>
+          <h2 className="lead">72 Hour Project</h2>
+        </Container>
+      </Jumbotron>
+      </div>
+        <CardDeck>
+          <WeatherChild />
 
-</div>
-
-  );
-}
+        </CardDeck>
+    </div>    
+     
+    );
+  }
 
 export default App;
