@@ -42,6 +42,8 @@
   background-position:right;
   background-repeat: no-repeat;
   height: 325px;
+  color: white;
+  background-color: #282c34;
 }
 
 .Card {

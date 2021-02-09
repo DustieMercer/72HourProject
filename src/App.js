@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import './App.css';
 import WeatherChild from "./components/weather/Weather";
 import {CardDeck, Container, Jumbotron} from 'reactstrap';
-import officeSpace from './components/assets/officeSpace.jpg';
+import officeSpace from './components/assets/officeSpace3.jpg';
 import Restaurants from './components/Restaurants'
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
     }
 
     return (
-      <div>
+      <div style={{backgroundColor: 'black'}}>
         <div className='container'>
       <Jumbotron fluid>
         <Container background-img={officeSpace} fluid>
@@ -33,7 +33,8 @@ function App() {
           <WeatherChild latitude={latitude} longitude={longitude}/>
           <Satellite latitude={latitude} longitude={longitude}/>
           <Restaurants latitude={latitude} longitude={longitude} />
-        </CardDeck>  
+        </CardDeck> 
+        <footer style={{color: "white", marginTop: "12em"}}> &copy; 2021 Team Office Space</footer>
       </div>
   );
 }
