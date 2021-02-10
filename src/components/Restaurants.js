@@ -39,7 +39,7 @@ const Restaurants = (props) => {
         <CardTitle tag="h5">You like food ehh? Check out these nearby restaurants...</CardTitle>
         <div>
           <ul>
-         {restaurants.map(restaurant, index => (<a key = {index} href={restaurant.restaurant.url}><li>{restaurant.restaurant.name}</li></a>))}
+         {restaurants.map((restaurant, index) => (<a key = {index} href={restaurant.restaurant.url}><li>{restaurant.restaurant.name}</li></a>))}
           </ul>
         </div>
   

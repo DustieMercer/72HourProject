@@ -4,6 +4,7 @@ import {
   CardTitle,
   Button,
   CardText,
+  CardImg,
 } from "reactstrap";
 import sunIcon from "../assets/sunIcon.png";
 
@@ -36,6 +37,7 @@ function handleClick (){
 
   return (
     <Card>
+      <CardImg src={sunIcon}></CardImg>
       <CardTitle>Weather</CardTitle>
       <CardText>{fahrenheit}</CardText>
       <Button onClick={ handleClick } >Click for Celius/Fahrenheit</Button>
