@@ -34,11 +34,14 @@ const Satellite = (props) => {
     function loadHandling() {
         if (error) {
             return <div>Error: {error.message}</div>;
-          } else if (image === "") {
+          } else if (!isLoaded) {
             return <Spinner style={{ width: '3rem', height: '3rem' }} type="grow" />;
           } else {
             return (
-                <CardImg top width="100%" object-fit="cover" src={image} alt="Card image cap" />
+                <div>
+                    <CardImg top width="100%" object-fit="cover" src={image} alt="Card image cap" />
+                    <CardText>Hello from space!</CardText>
+                </div>
             );
           }
     }
