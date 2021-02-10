@@ -66,7 +66,7 @@ const WeatherChild = () => {
     <Card>
       <CardImg src={sunIcon} />
       <CardTitle>Weather</CardTitle>
-    <Button>{GetWeatherFahrenheit}</Button>
+    {/*<Button>{GetWeatherFahrenheit}</Button>*/}
     </Card>
   );
 };

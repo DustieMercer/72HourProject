@@ -7,8 +7,9 @@ import officeSpace from './components/assets/officeSpace.jpg';
 import Restaurants from './components/Restaurants'
 
 function App() {
-    const[longitude, setLongitude] = useState()
-    const[latitude, setLatitude] = useState()
+    const[longitude, setLongitude] = useState(0);
+    const[latitude, setLatitude] = useState(0);
+    
 
     useEffect(() => {
         navigator.geolocation.getCurrentPosition(showPosition);
@@ -30,9 +31,9 @@ function App() {
       </Jumbotron>
       </div>
         <CardDeck>
-          <WeatherChild latitude={latitude} longitude={longitude}/>
+         <WeatherChild latitude={latitude} longitude={longitude}/>
           <Satellite latitude={latitude} longitude={longitude}/>
-       <Restaurants latitude={latitude} longitude={longitude} /
+       <Restaurants latitude={latitude} longitude={longitude} />
       
         </CardDeck>  
       </div>
