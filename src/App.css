@@ -2,37 +2,22 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  padding-top: 1em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.jumbotron {
+  padding-top: 1em;
+  background-image: url(/src/components/assets/officeSpace2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 325px;
   color: white;
+  background-color: #282c34;
+  box-shadow: rgb(37, 25, 29) 0px 20px 30px -10px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card {
+  padding: 1em;
+  box-shadow: rgb(37, 25, 29) 0px 20px 30px -10px;
 }
