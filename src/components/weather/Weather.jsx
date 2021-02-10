@@ -39,7 +39,6 @@ function handleClick (){
       <CardTitle>Weather</CardTitle>
       <CardText>{fahrenheit}</CardText>
       <Button onClick={ handleClick } >Click for Celius/Fahrenheit</Button>
-
     </Card>
   );
 };

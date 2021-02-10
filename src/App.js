@@ -10,8 +10,8 @@ import WeatherChild from "./components/weather/Weather";
 
 
 function App() {
-    const[longitude, setLongitude] = useState(0)
-    const[latitude, setLatitude] = useState(0)
+    const[longitude, setLongitude] = useState(0);
+    const[latitude, setLatitude] = useState(0);
 
     useEffect(() => {
         navigator.geolocation.getCurrentPosition(showPosition);
@@ -33,9 +33,10 @@ function App() {
       </Jumbotron>
       </div>
         <CardDeck>
-          <WeatherChild latitude={latitude} longitude={longitude}/>
+         <WeatherChild latitude={latitude} longitude={longitude}/>
           <Satellite latitude={latitude} longitude={longitude}/>
-       {/* <Restaurants latitude={latitude} longitude={longitude} /> */}
+       <Restaurants latitude={latitude} longitude={longitude} />
+     
         </CardDeck>  
       </div>
   );
