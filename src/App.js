@@ -1,14 +1,17 @@
 import Satellite from "./components/Satellite";
 import React, { useEffect, useState } from "react";
 import './App.css';
-import WeatherChild from "./components/weather/Weather";
 import {CardDeck, Container, Jumbotron} from 'reactstrap';
 import officeSpace from './components/assets/officeSpace.jpg';
 import Restaurants from './components/Restaurants'
+import WeatherChild from "./components/weather/Weather";
+
+
+
 
 function App() {
-    const[longitude, setLongitude] = useState()
-    const[latitude, setLatitude] = useState()
+    const[longitude, setLongitude] = useState(0)
+    const[latitude, setLatitude] = useState(0)
 
     useEffect(() => {
         navigator.geolocation.getCurrentPosition(showPosition);
@@ -32,8 +35,7 @@ function App() {
         <CardDeck>
           <WeatherChild latitude={latitude} longitude={longitude}/>
           <Satellite latitude={latitude} longitude={longitude}/>
-       <Restaurants latitude={latitude} longitude={longitude} /
-      
+       {/* <Restaurants latitude={latitude} longitude={longitude} /> */}
         </CardDeck>  
       </div>
   );
